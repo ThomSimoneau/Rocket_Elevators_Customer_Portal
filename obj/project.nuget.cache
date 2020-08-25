@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4VokSbg5TFOXAgFX6LvqqoY20ttDxMqFDpmYdmIb5GitQumhNqagFWvqUB7O+DEOkLgmTGTB06TKOSoFO3qdnw==",
+  "dgSpecHash": "yibplNPf5friZU90wPh7qr1FdUKmcRDbrbOqDwR8KY4jnRsdpnnIMLKH+OGeZqdIb9fVzQzjqMSk7+o/E8zUKA==",
   "success": true,
   "projectFilePath": "D:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.7\\microsoft.aspnetcore.cryptography.internal.3.1.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.7\\microsoft.aspnetcore.cryptography.keyderivation.3.1.7.nupkg.sha512",
+    "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.7\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.7\\microsoft.aspnetcore.identity.ui.3.1.7.nupkg.sha512",

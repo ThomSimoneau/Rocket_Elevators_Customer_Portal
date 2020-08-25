@@ -14442,8 +14442,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\page-login.cshtml",
-      "TargetPath": "Views\\Shared\\page-login.cshtml",
+      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
     }
   ],

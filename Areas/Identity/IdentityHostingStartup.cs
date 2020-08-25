@@ -19,7 +19,7 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("Rocket_Elevators_Customer_PortalIdentityDbContextConnection")));
 
-                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                     .AddEntityFrameworkStores<Rocket_Elevators_Customer_PortalIdentityDbContext>();
             });
         }

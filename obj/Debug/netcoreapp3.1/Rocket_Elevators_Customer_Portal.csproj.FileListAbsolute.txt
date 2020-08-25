@@ -162,3 +162,5 @@ D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Login.cshtml.g.cs
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
