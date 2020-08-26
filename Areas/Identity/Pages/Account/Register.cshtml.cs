@@ -22,14 +22,14 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class RegisterModel : PageModel
     {
-        private readonly SignInManager<User> _signInManager;
-        private readonly UserManager<User> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<User> userManager,
-            SignInManager<User> signInManager,
+            UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
             IEmailSender emailSender)
         {
@@ -100,7 +100,8 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
 
             using (var response = await Program.client.SendAsync(request))
             {
-                response.EnsureSuccessStatusCode();
+                
+                //response.EnsureSuccessStatusCode();
                 var responseString = await response.Content.ReadAsStringAsync();
                 responseObj = JsonConvert.DeserializeObject<dynamic>(responseString);
 
