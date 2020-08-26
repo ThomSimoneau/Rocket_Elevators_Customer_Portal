@@ -5,10 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Rocket_Elevators_Customer_Portal.Areas.Identity.Data;
 
 namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Data
 {
-    public class Rocket_Elevators_Customer_PortalIdentityDbContext : IdentityDbContext<IdentityUser>
+    public class Rocket_Elevators_Customer_PortalIdentityDbContext : IdentityDbContext<User>
     {
         public Rocket_Elevators_Customer_PortalIdentityDbContext(DbContextOptions<Rocket_Elevators_Customer_PortalIdentityDbContext> options)
             : base(options)
