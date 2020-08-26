@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yibplNPf5friZU90wPh7qr1FdUKmcRDbrbOqDwR8KY4jnRsdpnnIMLKH+OGeZqdIb9fVzQzjqMSk7+o/E8zUKA==",
+  "dgSpecHash": "6Pds6OS3Y3pa1Sqfy0suXDPTxPPq2xKMZLkyBf0pdPJ2gquU2zCjQ69dszX0H4nBZHjz75ahpEb0IYnLSbNpFA==",
   "success": true,
   "projectFilePath": "D:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Rocket_Elevators_Customer_Portal.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.7\\microsoft.aspnetcore.cryptography.internal.3.1.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.7\\microsoft.aspnetcore.cryptography.keyderivation.3.1.7.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.7.nupkg.sha512",
@@ -64,7 +65,8 @@
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Thom\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Thom\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Thom\\.nuget\\packages\\newtonsoft.json.bson\\1.0.1\\newtonsoft.json.bson.1.0.1.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\Thom\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
