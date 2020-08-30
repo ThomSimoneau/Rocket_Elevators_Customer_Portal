@@ -54,6 +54,7 @@ namespace Rocket_Elevators_Customer_Portal
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             endpoints.MapRazorPages();
+            
         });
     }
 }

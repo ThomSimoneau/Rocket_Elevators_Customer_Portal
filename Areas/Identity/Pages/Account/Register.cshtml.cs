@@ -80,15 +80,15 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
             var queryObject = new
             {
                 query = @"
-                query customers ($email:String){
-                customers (email:$email){
+                query customersEmail ($email:String!){
+                customersEmail (email:$email){
     	            email
                     }  
                }",
                variables = new {email = Input.Email}
                
             };   
-
+           
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Post,
@@ -104,10 +104,11 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
                 //response.EnsureSuccessStatusCode();
                 var responseString = await response.Content.ReadAsStringAsync();
                 responseObj = JsonConvert.DeserializeObject<dynamic>(responseString);
-
+            
             }
-
-            if (ModelState.IsValid)
+            Console.Write(queryObject);
+            Console.Write(responseObj);
+            if (ModelState.IsValid && responseObj["data"]["customersEmail"] != null)
             {
                 var user = new User { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
@@ -141,6 +142,10 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
+            else
+            {
+                 ModelState.AddModelError(string.Empty, "The email is not recognized as one of our customer. Please contact us for more information.");
+            };
 
             // If we got this far, something failed, redisplay form
             return Page();

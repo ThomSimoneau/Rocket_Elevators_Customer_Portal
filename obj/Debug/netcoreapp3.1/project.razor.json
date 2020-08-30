@@ -14397,6 +14397,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\Intervention.cshtml",
+      "TargetPath": "Views\\Shared\\Intervention.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\DeletePersonalData.cshtml",
       "FileKind": "mvc"
@@ -14492,11 +14497,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\TwoFactorAuthentication.cshtml",
       "FileKind": "mvc"
@@ -14577,6 +14577,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\Shared\\Products.cshtml",
+      "TargetPath": "Views\\Shared\\Products.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWithRecoveryCode.cshtml",
       "FileKind": "mvc"
@@ -14584,6 +14589,11 @@
     {
       "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\CodeBoxx\\Week 11\\RE_CP\\Rocket_Elevators_Customer_Portal\\Views\\CustomerPage.cshtml",
+      "TargetPath": "Views\\CustomerPage.cshtml",
       "FileKind": "mvc"
     },
     {

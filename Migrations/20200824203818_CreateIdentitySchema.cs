@@ -40,6 +40,7 @@ namespace Rocket_Elevators_Customer_Portal.Migrations
                     LockoutEnd = table.Column<DateTimeOffset>(nullable: true),
                     LockoutEnabled = table.Column<bool>(nullable: false),
                     AccessFailedCount = table.Column<int>(nullable: false)
+                    
                 },
                 constraints: table =>
                 {

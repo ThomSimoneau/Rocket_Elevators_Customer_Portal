@@ -1,0 +1,81 @@
+
+ @using Microsoft.AspNetCore.Identity
+ 
+ @inject UserManager<IdentityUser> UserManager
+<section id="interventionform">
+	<div class="container">
+		<header class="text-center mb-60">
+      <script src="~/lib/jquery/dist/jquery.js" ></script>
+      <script src="~/js/intervention.js" ></script>  
+      @Html.Raw(ViewBag.UserBag)
+      @if(ViewBag.Message != null)
+        {
+          <script>
+            $(document).ready(function(){
+            alert('@ViewBag.Message');
+        });
+          </script>
+
+}
+
+			<h2>Intervention Form</h2>
+
+			<hr />
+		</header>
+    <!-- FORM -->
+    <form action="interventionForm" method="post">
+		  <div class="row align-items-center">
+        <div class="col-md-8">
+          <label id="building_label" for="intervention"> Building list: *</label>
+          <select id="building_id" required class="form-control pointer"  name="building_id" >
+            <option selected value="0">--- Select --- </option>
+            @Html.Raw(ViewBag.BuildingBag)
+          </select>
+        </div>
+      </div>
+      <div class = "row align-items-center">
+        <div class="col-md-4">
+          <label id="battery_label" for="intervention"> Battery list *: </label>
+          <select id="battery_id" required class="form-control pointer"  name="battery_id" >
+            <option selected value="0">--- Select ---</option>
+            @Html.Raw(ViewBag.BatteryBag) 
+          </select>
+        </div>
+      </div>
+      <div class = "row align-items-center">
+        <div class="col-md-4">
+          <label id="column_label" for="intervention"> Column list: </label>
+          <select id="column_id" class="form-control pointer"  name="column_id" >
+            <option selected value="0">--- Select --- </option>
+            @Html.Raw(ViewBag.ColumnBag) 
+          </select>
+        </div>
+      </div>
+      <div class = "row align-items-center">
+        <div class="col-md-4">
+          <label id="elevator_label" for="intervention"> Elevator list: </label>
+          <select id="elevator_id" class="form-control pointer"  name="elevator_id" >
+            <option selected value="0">--- Select --- </option>
+            @Html.Raw(ViewBag.ElevatorBag)
+          </select>
+        </div>
+      </div>
+        <div class = "row align-items-center">
+          <div class="col-md-12">
+            <label for="intervention">Description</label>
+            <input id="intervention_description" type="text" value="" class="form-control" name="report">
+          </div>
+        </div>
+    
+			  <div  style="margin-top: 30px">						
+          <input class="btn btn-primary btn-lg btn-block fs-15" type="submit" value="Ask Intervention" id= "interventionFormButton">
+        </div>
+    </form>
+    
+
+</section>
+
+
+<footer> 
+
+</footer>

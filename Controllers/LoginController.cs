@@ -13,21 +13,9 @@ namespace Rocket_Elevators_Customer_Portal
 {
     public class LoginController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Intervention()
         {
             return View();
-        }
-
-        static async Task RunAsync()
-        {
-        
-            // Update port # in the following line.
-            Program.client.BaseAddress = new Uri("http://localhost:5001/");
-            Program.client.DefaultRequestHeaders.Accept.Clear();
-            Program.client.DefaultRequestHeaders.Accept.Add(
-            new MediaTypeWithQualityHeaderValue("application/json"));
-
-
         }
     }
 }
