@@ -18,7 +18,7 @@
     "Rocket_Elevators_Customer_Portal": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://rocketelevatorsclientplatform.azurewebsites.net/;http://rocketelevatorsclientplatform.azurewebsites.net/",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Production"
       }
