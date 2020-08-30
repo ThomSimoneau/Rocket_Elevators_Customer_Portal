@@ -16,24 +16,31 @@
   <div class="col-8">
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-		    <div>	
+		    <div class ="buildingDiv" style="border-style: groove">	
 			    @Html.Raw(ViewBag.BuildingBag)
 		    </div>
       
       </div>
       <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-        <div>
+        <div class ="batteryDiv" style="border-style: groove">
            @Html.Raw(ViewBag.BatteryBag)
         </div>
 
       </div>
       <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-        <div>
-            @Html.Raw(ViewBag.ColumnBag)
+        <div class="columnDiv" style="border-style: groove">
+            <!-- @Html.Raw(ViewBag.ColumnBag) -->
+            <div class="row">
+              <div class="col-3">INFO</div>
+              <div class="col-6"></div>
+              <div class="col-3">
+                <input id="check" type="radio"> Select
+              </div> 
+            </div>
         </div>
       </div>
       <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-        <div>
+        <div class="elevatorDiv" style="border-style: groove">
            @Html.Raw(ViewBag.ElevatorBag)
         </div>
       </div>
@@ -43,3 +50,19 @@
 <div style="margin-top:20px">
 	<input class="btn btn-primary" style="" type="submit" value="Ask Intervention" id= "interventionFormButton">
 </div>
+
+
+<script>
+$('div.columnDiv').click(function() {
+  $n = event.target.nodeName;
+  if ($n != 'INPUT') {
+    $b2 = !$('#check').prop("checked");
+    $('#check').prop("checked", $b2);
+    //if change to true
+    //submit event
+    //else
+    //no submit event
+  }
+})
+
+</script>

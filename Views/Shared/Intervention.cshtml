@@ -7,23 +7,27 @@
 		<header class="text-center mb-60">
       <script src="~/lib/jquery/dist/jquery.js" ></script>
       <script src="~/js/intervention.js" ></script>  
+     
       @Html.Raw(ViewBag.UserBag)
-      @if(ViewBag.Message != null)
-        {
-          <script>
-            $(document).ready(function(){
-            alert('@ViewBag.Message');
-        });
-          </script>
-
-}
-
+      @if(TempData["InterventionCreated"] != null)
+      {
+          <div style="color: green">
+              <p><stong>Success: </stong> @TempData["InterventionCreated"].ToString()</p>
+          </div>
+      }
+      @if(TempData["InterventionError"] != null)
+      {
+          <div style="color: red">
+              <p><stong>Error: </stong> @TempData["InterventionError"].ToString()</p>
+          </div>
+      } 
 			<h2>Intervention Form</h2>
 
 			<hr />
 		</header>
     <!-- FORM -->
     <form action="interventionForm" method="post">
+      @Html.Raw(ViewBag.CustomerID)
 		  <div class="row align-items-center">
         <div class="col-md-8">
           <label id="building_label" for="intervention"> Building list: *</label>

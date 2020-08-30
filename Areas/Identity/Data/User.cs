@@ -11,6 +11,8 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Data
     {
          [PersonalData]
         public string Name { get; set; }
+
+        public int customer_ID { get; set;}
         
     }
 }

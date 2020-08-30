@@ -81,11 +81,15 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
             {
                 query = @"
                 query customersEmail ($email:String!){
-                customersEmail (email:$email){
+                customers(email:$email){
     	            email
+                    id
                     }  
                }",
-               variables = new {email = Input.Email}
+               variables = new 
+               {
+                   email = Input.Email,
+               }
                
             };   
            
@@ -104,51 +108,65 @@ namespace Rocket_Elevators_Customer_Portal.Areas.Identity.Pages.Account
                 //response.EnsureSuccessStatusCode();
                 var responseString = await response.Content.ReadAsStringAsync();
                 responseObj = JsonConvert.DeserializeObject<dynamic>(responseString);
-            
+                
             }
-            Console.Write(queryObject);
-            Console.Write(responseObj);
-            if (ModelState.IsValid && responseObj["data"]["customersEmail"] != null)
+           // Console.Write(queryObject);
+            var firstObj = responseObj["data"]["customers"]["id"];
+            try 
             {
-                var user = new User { UserName = Input.Email, Email = Input.Email };
-                var result = await _userManager.CreateAsync(user, Input.Password);
-                if (result.Succeeded)
+
+                if (ModelState.IsValid && responseObj["data"]["customers"] != null)
                 {
-                    _logger.LogInformation("User created a new account with password.");
-
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
-                    code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
-                    var callbackUrl = Url.Page(
-                        "/Account/ConfirmEmail",
-                        pageHandler: null,
-                        values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
-                        protocol: Request.Scheme);
-
-                    await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
-
-                    if (_userManager.Options.SignIn.RequireConfirmedAccount)
+                    TempData["Success"] = "User created! Welcome to your client platform!";
+                    
+                    var user = new User { UserName = Input.Email, Email = Input.Email};
+                    var result = await _userManager.CreateAsync(user, Input.Password);
+                    if (result.Succeeded)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        _logger.LogInformation("User created a new account with password.");
+
+                        var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                        code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
+                        var callbackUrl = Url.Page(
+                            "/Account/ConfirmEmail",
+                            pageHandler: null,
+                            values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
+                            protocol: Request.Scheme);
+
+                        await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
+                            $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+
+                        if (_userManager.Options.SignIn.RequireConfirmedAccount)
+                        {
+                            return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        }
+                        else
+                        {
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return RedirectToAction("Index");
+                        }
                     }
-                    else
+                    foreach (var error in result.Errors)
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
-                        return LocalRedirect(returnUrl);
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
-                foreach (var error in result.Errors)
+                else
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
-                }
-            }
-            else
-            {
-                 ModelState.AddModelError(string.Empty, "The email is not recognized as one of our customer. Please contact us for more information.");
-            };
+                     ModelState.AddModelError(string.Empty, "The email is not recognized as one of our customer. Please contact us for more information.");
+                };
 
-            // If we got this far, something failed, redisplay form
-            return Page();
+                // If we got this far, something failed, redisplay form
+                return Page();
+            }  
+            catch 
+            {
+                ModelState.AddModelError(string.Empty, "A Critial Error happened while creating your account. Please contact support.");
+                return Page();
+
+
+            }
         }
+       
     }
 }

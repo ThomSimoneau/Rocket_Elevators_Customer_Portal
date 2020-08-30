@@ -1,8 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
+
+<body>
+<!-- First Container -->
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Customer Portal</h1>
+     @if (TempData["Success"] != null)
+    {
+        <div style="color: green">
+            <p><stong>Success: </stong> @TempData["Success"].ToString()</p>
+        </div>
+    }
 </div>
+<div>
+    <h2>Welcome!</h2>
+</div>
+
+
+</body>
+</html>
