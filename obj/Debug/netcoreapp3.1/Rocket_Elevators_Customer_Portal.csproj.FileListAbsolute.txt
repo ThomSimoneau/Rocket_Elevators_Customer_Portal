@@ -206,3 +206,9 @@ D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\package-lock.json
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Intervention.cshtml.g.cs
 D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Products.cshtml.g.cs
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\web.config
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\appsettings.json
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\package-lock.json
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\Rocket_Elevators_Customer_Portal.deps.json
+D:\CodeBoxx\Week 11\RE_CP\Rocket_Elevators_Customer_Portal\bin\Debug\netcoreapp3.1\publish\Rocket_Elevators_Customer_Portal.runtimeconfig.json

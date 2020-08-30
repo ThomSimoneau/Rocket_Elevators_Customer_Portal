@@ -18,7 +18,7 @@ namespace Rocket_Elevators_Customer_Portal
     {
         public static HttpClient client = new HttpClient{
 
-            BaseAddress = new Uri("https://https://rocketelevatorsgraphql.herokuapp.com/graphql")
+            BaseAddress = new Uri("https://rocketelevatorsgraphql.herokuapp.com/graphql")
         };
        
     
